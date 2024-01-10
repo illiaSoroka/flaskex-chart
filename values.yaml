@@ -11,5 +11,4 @@ service:
 hpa:
   min: 2
   max: 10
-  
   cpu: 75
