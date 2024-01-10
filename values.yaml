@@ -1,0 +1,14 @@
+replicas: 2
+image:
+  repo: ikambarov/flaskex
+  tag: v2
+container:
+  cpuRequest: 250m
+  memRequest: 128Mi
+service:
+  type: LoadBalancer
+  port: 80
+hpa:
+  min: 2
+  max: 10
+  cpu: 75
