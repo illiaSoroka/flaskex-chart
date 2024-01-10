@@ -19,4 +19,4 @@ jobs:
           token: ${{ secrets.K8S_SA_TOKEN }}
           namespace: default
       - name: Helm Install
-        run: helm upgrade --install myapp •
+        run: helm upgrade --install myapp .
